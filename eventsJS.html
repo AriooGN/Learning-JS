@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+    <head>
+        <script>
+            var x = false;
+            function toggleButton(){
+                x = !x
+                if(x){
+                    document.getElementById('demo').innerHTML = "true"
+                } else {
+                    document.getElementById('demo').innerHTML = "false"
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <button onclick="toggleButton()">Toggle</button>
+        <p id="demo">false</p>
+           <!-- Use inline CSS to define the default style of the button -->
+
+        <script>
+            // Get a reference to the button element
+            var button = document.getElementById('myButton');
+
+            // Add event listeners for the mouseover and mouseout events
+            button.onmouseover = function() {
+                // Add the 'highlighted' class to the button
+                button.classList.add('highlighted');
+            };
+
+            button.onmouseout = function() {
+                // Remove the 'highlighted' class from the button
+                button.classList.remove('highlighted');
+            };
+        </script>
+    </body>
+
+
+
+</html>
